@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    overflow: node;
+   
 }
 nav {
     position: absolute;
@@ -140,7 +140,7 @@ color: #000000;
     height: 113px;
     left: 0px;
     top: 309px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     overflow-x: auto;
     min-width: 0;
     flex: auto; 
