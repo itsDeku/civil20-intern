@@ -154,7 +154,7 @@ color: #000000;
     display: none;  /* Safari and Chrome */
 }
 .MoversCard {
-    
+    z-index: 1;
     flex: 0 0 auto;
     
     box-sizing: border-box;
@@ -250,7 +250,7 @@ position: absolute;
 width: 64px;
 height: 16px;
 left: 38px;
-top: 1px;
+top: 0px;
 
 font-family: 'Roboto';
 font-style: normal;
