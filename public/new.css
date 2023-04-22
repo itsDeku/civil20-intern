@@ -145,6 +145,7 @@ color: #000000;
     display: none;  /* Safari and Chrome */
 }
 .MoversCard {
+    z-index: 1;
     flex: 0 0 auto;
     box-sizing: border-box;
     position: relative;
