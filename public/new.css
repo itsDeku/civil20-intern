@@ -1,6 +1,10 @@
+body{
+    margin: 0px;
+    overflow: node;
+}
 nav {
     position: absolute;
-    width: 390px;
+    width: 100%;
     height: 50px;
     left: 0px;
     top: 0px;
@@ -25,7 +29,7 @@ nav {
 .BrandCards{ 
     position: absolute;
     width: 90%;
-    margin-left: 3.5%;
+    margin-left: 5%;
     margin-right: 5%;
     height: 161px;
    
@@ -36,7 +40,7 @@ nav {
 }
 .BrandText{ 
     position: absolute;
-    width: 231px;
+    width: 100%;
     height: 21px;
     left: 26px;
     top: 26px;
@@ -85,6 +89,7 @@ nav {
 
     background: url("assets/Hnc7xb0z_2x-removebg-preview.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .BrandsubText {
     position: absolute;
@@ -110,6 +115,7 @@ nav {
 
     background: url('assets/Untitled2-removebg-preview.png');
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .TopMovers {
     position: absolute;
@@ -130,23 +136,27 @@ color: #000000;
 .TopMoversCards {
     position: relative;
     display: flex;
-    
+    box-sizing: initial;
     height: 113px;
     left: 0px;
     top: 309px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow-x: auto;
+    min-width: 0;
+    flex: auto; 
     
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    -ms-overflow-style: none;  
     scrollbar-width: none;
+    
 
 }
 .TopMoversCards::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
 .MoversCard {
-    z-index: 1;
+    
     flex: 0 0 auto;
+    
     box-sizing: border-box;
     position: relative;
     width: 155px;
@@ -249,10 +259,12 @@ font-size: 13px;
 line-height: 15px;
 /* identical to box height */
 
+
+
 }
-.moverup  {
+.moverup {
     color: #3AC19D;
-}
+} 
 .moverdown {
     color: #F06173;
 }
@@ -341,9 +353,10 @@ color: #000000;
 }
 .PlayerDataContainer {
     position: absolute;
-    width: 360px;
+    width: 92%;
+    margin-left: 4%;
+    margin-right: 4%;
     height: 33%;
-    left: 16px;
     top: 513px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -358,7 +371,7 @@ color: #000000;
     box-sizing: border-box;
 
     position: relative;
-    width: 356px;
+    width: 100%;
     height: 77px;
     overflow-y: auto;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -433,22 +446,23 @@ color: #000000;
     position: absolute;
     width: 43px;
     height: 22px;
-    right: 0px;
+    right: 3px;
     bottom: 11px;
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 14px;
 
+    
 }
 footer{
     box-sizing: border-box;
     display: flex;
   justify-content: center;
 position: absolute;
-width: 390px;
+width: 100%;
 height: 52px;
 left: 0px;
 top: 792px;
@@ -483,10 +497,7 @@ g {
 .homebtn > g{
     fill: #870477;
 }
-.casebtnbox{
-   
-    
-}
+
 .casebtn {
     position: absolute;
     width: 30px;
@@ -497,10 +508,7 @@ g {
     background-repeat: no-repeat;
 
 }
-.walletbtnbox {
-   
-
-}   
+ 
 .walletbtn {
     
     position: absolute;
@@ -512,9 +520,7 @@ top: 12px;
     background-repeat: no-repeat;
 
 }
-.manubtnbox {
-    
-}
+
 .manubtn {
     position: absolute;
 width: 25px;
