@@ -188,7 +188,7 @@
         xhr.send();
         setTimeout(() => { 
             const xhr2 = new XMLHttpRequest();
-            xhr2.open('GET', 'https://civil20-intern.onrender.com/AllList');
+            xhr2.open('GET', 'https://civil20-intern.onrender.com/collections/AllList');
             xhr2.onreadystatechange = function() {
                 if (xhr2.readyState === 4 && xhr2.status === 200) {
                 const response = xhr2.responseText;
